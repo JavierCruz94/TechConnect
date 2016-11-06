@@ -16,11 +16,12 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 	string[,] pregunta = new string[,]{{"",""}};
 	public int contResp;
 	private int contVidas;
+	int respCorrectas;
 
 	// Use this for initialization
 	void Start () {
 		contVidas = 0;
-		contResp = 0;
+		respCorrectas = 0;
 		panelGanaste.SetActive (false);
 		panelPerdiste.SetActive (false);
 		InicioJuego ();
@@ -48,9 +49,9 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 
 			//validar todo
 			if (BancoPreguntas.tOrfNomenclatura[0,bancoPregunta, 1] == trad) {
-				print ("bien");
-
-				if (contResp == 2) {
+				//print ("bien");
+				respCorrectas++;
+				if (respCorrectas == 2) {
 					MasterNomenclatura.nivelTres = true;
 					panelGanaste.SetActive (true);
 				}
@@ -65,13 +66,13 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 	}
 
 	void InicioJuego() {
-		bancoPregunta = (int)Random.Range (0.0f, 1.0f);
+		bancoPregunta = (int)Random.Range (0.0f, 2.0f);
 
 		while (BancoPreguntas.tOrfNomenclatura [0, bancoPregunta, 2] == "si") {
-			bancoPregunta = (int)Random.Range (0.0f, 1.0f);
+			bancoPregunta = (int)Random.Range (0.0f, 2.0f);
 		}
-
 		BancoPreguntas.tOrfNomenclatura [0, bancoPregunta, 2] = "si";
+
 		pregunta [0, 0] = BancoPreguntas.tOrfNomenclatura [0,bancoPregunta, 0];
 		pregunta [0, 1] = BancoPreguntas.tOrfNomenclatura [0,bancoPregunta, 1];
 		preg.GetComponent<Text> ().text = pregunta [0, 0];
@@ -81,12 +82,13 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 	void Reinicia() {
 		contResp = 0;
 
-		for (int i = 0; i < arrResp.Length; i++) {
+		for (int i = 0; i < 2; i++) {
 			arrResp [i].GetComponent<SeleccionaRespuesta> ().clickState = false;
 			arrResp [i].GetComponent<SeleccionaRespuesta> ().CambiaColor ();
 		}
-			pregunta [0, 0] = "";
-			pregunta [0, 1] = "";
+
+		pregunta [0, 0] = "";
+		pregunta [0, 1] = "";
 
 		if (contVidas < 0) {
 			for (int i = 0; i < 2; i++) {
@@ -95,8 +97,6 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 			panelPerdiste.SetActive (true);
 		} else 
 			InicioJuego ();
-
-
 	}
 
 }

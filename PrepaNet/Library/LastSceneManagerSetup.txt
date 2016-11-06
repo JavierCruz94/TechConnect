@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/TrueFlase.unity
+- path: Assets/Scenes/Nomenclatura/TrueFalseNomenclatura.unity
   isLoaded: 1
   isActive: 1

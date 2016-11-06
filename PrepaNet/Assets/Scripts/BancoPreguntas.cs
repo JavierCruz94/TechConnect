@@ -67,6 +67,7 @@ public class BancoPreguntas : MonoBehaviour {
 
 	public static string[, ,] tOrfNomenclatura = new string[, ,] {{
 		{"La siguente molécula es un ácido carboxílico", "si", "no"},
-		{"La siguente imagen es una representación del ácido acético", "no", "no"}
+		{"La siguente imagen es una representación del ácido acético", "no", "no"},
+			{"Este proyecto fue un éxito", "no", "no"}
 		}};
 }
