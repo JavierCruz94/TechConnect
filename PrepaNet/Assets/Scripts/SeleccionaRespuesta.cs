@@ -14,25 +14,26 @@ public class SeleccionaRespuesta : MonoBehaviour{
 
 	public void CambiaColor() {
 		if (clickState) {
-			ChangeColor (0.0f, 255.0f, 23.0f, 255.0f);
+			ChangeColor (1.0f, 0.0f, 1.0f, 1.0f);
 		} else {
-			ChangeColor (255.0f, 255.0f, 255.0f, 255.0f);
+			ChangeColor (0.0f, 0.0f, 0.0f, 1.0f);
 		}
 	}
 
 	public void ColorEncima() {
-		ChangeColor (0.0f, 255.0f, 0.0f, 0.3f);
+		ChangeColor (1.0f, 0.92f, 0.016f, 1.0f);
 	}
 
 	public void ColorSale() {
 		if (clickState)
-			ChangeColor (0.0f, 255.0f, 23.0f, 255.0f);
+			ChangeColor (1.0f, 0.0f, 1.0f, 1.0f);
 		else
-			ChangeColor (255.0f, 255.0f, 255.0f, 255.0f);
+			ChangeColor (0.0f, 0.0f, 0.0f, 1.0f);
 	}
 
 	public void ChangeColor(float a, float b, float c, float d) {
 		Color color = new Color (a,b,c,d);
+
 		this.gameObject.GetComponent<Text> ().color = color;
 	}
 

@@ -69,6 +69,7 @@ public class EligeRespuesta : MonoBehaviour {
 
 	public void Validar() {
 		int seleccion = 0;
+		contResp = 0;
 		for (int i = 1; i < arrResp.Length; i++) {
 			if (arrResp [i].GetComponent<SeleccionaRespuesta> ().clickState) {
 				contResp++;

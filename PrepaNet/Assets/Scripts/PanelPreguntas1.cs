@@ -8,6 +8,6 @@ public class PanelPreguntas1 : MonoBehaviour {
 
 	public void QuitarPanel() {
 		panel.SetActive (false);
-		respuestas.GetComponent<EligeRespuesta> ().contResp = 0;
+		respuestas.GetComponent<EligeNomenclatura> ().contResp = 0;
 	}
 }
