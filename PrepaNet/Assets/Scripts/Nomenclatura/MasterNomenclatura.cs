@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class MasterNomenclatura : MonoBehaviour {
 
-	public static bool nivelDos = true;
+	public static bool nivelDos = false;
 	public static bool nivelTres = false;
 
 	public GameObject panelNiv2;
