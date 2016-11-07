@@ -70,4 +70,14 @@ public class BancoPreguntas : MonoBehaviour {
 		{"La siguente imagen es una representación del ácido acético", "no", "no"},
 			{"Este proyecto fue un éxito", "no", "no"}
 		}};
+
+	public static string[,] cadenaNomenclatura = new string[,] {
+		{"Ácido 3-bromo-6-oxo-octanoico","no"},
+		{"Ácido ciclohexnocarboxílico","no"},
+		{"Ácido acético","no"},
+		{"Ácido 4-hidroxi-3-metilpentanoico","no"},
+		{"Ácido benzoico","no"},
+		{"Ácido 4-bromo-5-oxo-heptanoico","no"},
+		{"Ninguna opción es correcta","no"}
+	};
 }

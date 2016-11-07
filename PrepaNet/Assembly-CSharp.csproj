@@ -51,6 +51,8 @@
      <Compile Include="Assets\Scripts\LoadScene.cs" />
      <Compile Include="Assets\Scripts\Nomenclatura\EligeNomenclatura.cs" />
      <Compile Include="Assets\Scripts\Nomenclatura\MasterNomenclatura.cs" />
+     <Compile Include="Assets\Scripts\Nomenclatura\NombraCadena.cs" />
+     <Compile Include="Assets\Scripts\Nomenclatura\PanelCadena.cs" />
      <Compile Include="Assets\Scripts\Nomenclatura\PanelNomenclatura.cs" />
      <Compile Include="Assets\Scripts\Nomenclatura\PanelTFNomenclatura.cs" />
      <Compile Include="Assets\Scripts\Nomenclatura\TrueFalseNomenclatura.cs" />
