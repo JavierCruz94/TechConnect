@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Nomenclatura/CadenaNomenclatura.unity
+- path: Assets/Scenes/Nomenclatura/PreguntasNomenclatura.unity
   isLoaded: 1
   isActive: 1

@@ -16,7 +16,7 @@ public class SeleccionaRespuesta : MonoBehaviour{
 		if (clickState) {
 			ChangeColor (1.0f, 0.0f, 1.0f, 1.0f);
 		} else {
-			ChangeColor (0.0f, 0.0f, 0.0f, 1.0f);
+			ChangeColor (1.0f, 1.0f, 1.0f, 1.0f);
 		}
 	}
 
@@ -28,7 +28,7 @@ public class SeleccionaRespuesta : MonoBehaviour{
 		if (clickState)
 			ChangeColor (1.0f, 0.0f, 1.0f, 1.0f);
 		else
-			ChangeColor (0.0f, 0.0f, 0.0f, 1.0f);
+			ChangeColor (1.0f, 1.0f, 1.0f, 1.0f);
 	}
 
 	public void ChangeColor(float a, float b, float c, float d) {
