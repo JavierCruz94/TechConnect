@@ -11,6 +11,8 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 	public GameObject panel;
 	public GameObject panelPerdiste;
 	public GameObject panelGanaste;
+	public GameObject vidas;
+	public Sprite[] arrVidas = new Sprite[4];
 
 	public int bancoPregunta = 0;
 	string[,] pregunta = new string[,]{{"",""}};
@@ -20,7 +22,7 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		contVidas = 0;
+		contVidas = 3;
 		respCorrectas = 0;
 		panelGanaste.SetActive (false);
 		panelPerdiste.SetActive (false);
@@ -51,7 +53,7 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 			if (BancoPreguntas.tOrfNomenclatura[0,bancoPregunta, 1] == trad) {
 				//print ("bien");
 				respCorrectas++;
-				if (respCorrectas == 2) {
+				if (respCorrectas == 8) {
 					MasterNomenclatura.nivelTres = true;
 					panelGanaste.SetActive (true);
 				}
@@ -66,10 +68,11 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 	}
 
 	void InicioJuego() {
-		bancoPregunta = (int)Random.Range (0.0f, 2.0f);
+		bancoPregunta = (int)Random.Range (0.0f, 19.0f);
+		vidas.GetComponent<SpriteRenderer> ().sprite = arrVidas [contVidas];
 
 		while (BancoPreguntas.tOrfNomenclatura [0, bancoPregunta, 2] == "si") {
-			bancoPregunta = (int)Random.Range (0.0f, 2.0f);
+			bancoPregunta = (int)Random.Range (0.0f, 19.0f);
 		}
 		BancoPreguntas.tOrfNomenclatura [0, bancoPregunta, 2] = "si";
 

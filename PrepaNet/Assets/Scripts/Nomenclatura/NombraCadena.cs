@@ -38,10 +38,10 @@ public class NombraCadena : MonoBehaviour {
 	void IniciaJuego(){
 		vidas.GetComponent<SpriteRenderer> ().sprite = arrVidas [contVidas];
 		slotBuena = (int)Random.Range (0.0f, 3.0f);
-		pregunta = (int)Random.Range (0.0f, 4.0f);
+		pregunta = (int)Random.Range (0.0f, 14.0f);
 
 		while (BancoPreguntas.cadenaNomenclatura [pregunta, 1] == "si") {
-			pregunta = (int)Random.Range (0.0f, 4.0f);
+			pregunta = (int)Random.Range (0.0f, 14.0f);
 		}
 
 		BancoPreguntas.cadenaNomenclatura [pregunta, 1] = "si";
@@ -49,19 +49,19 @@ public class NombraCadena : MonoBehaviour {
 		resp [slotBuena, 1] = "si";
 		imagen.GetComponent<SpriteRenderer> ().sprite = arrImagen [pregunta];
 
-		int mala1 = (int)Random.Range (0.0f, 6.0f);
+		int mala1 = (int)Random.Range (0.0f, 14.0f);
 		while (mala1 == pregunta) {
-			mala1 = (int)Random.Range (0.0f, 6.0f);
+			mala1 = (int)Random.Range (0.0f, 14.0f);
 		}
 
-		int mala2 = (int)Random.Range (0.0f, 6.0f);
+		int mala2 = (int)Random.Range (0.0f, 14.0f);
 		while (mala2 == pregunta || mala2 == mala1) {
-			mala2 = (int)Random.Range (0.0f, 6.0f);
+			mala2 = (int)Random.Range (0.0f, 14.0f);
 		}
 
-		int mala3 = (int)Random.Range (0.0f, 6.0f);
+		int mala3 = (int)Random.Range (0.0f, 14.0f);
 		while (mala3 == pregunta || mala3 == mala2 || mala3 == mala1) {
-			mala3 = (int)Random.Range (0.0f, 6.0f);
+			mala3 = (int)Random.Range (0.0f, 14.0f);
 		}
 
 		//Asignar las respuestas erroneas en los espacios desocupados

@@ -1,14 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Nomenclatura\EligeNomenclatura.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BancoPreguntas.cs">
     <Files>
-      <File FileName="Assets\Scripts\Nomenclatura\TrueFalseNomenclatura.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Nomenclatura\MasterNomenclatura.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Nomenclatura\EligeNomenclatura.cs" Line="77" Column="38" />
-      <File FileName="Assets\Scripts\Nomenclatura\NombraCadena.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BancoPreguntas.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Nomenclatura\PanelCadena.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SeleccionaRespuesta.cs" Line="19" Column="30" />
+      <File FileName="Assets\Scripts\BancoPreguntas.cs" Line="155" Column="81" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
