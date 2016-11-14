@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class TrueFalseNomenclatura : MonoBehaviour {
 	
-	public Sprite[] arrImagen = new Sprite[2];
+	public Sprite[] arrImagen = new Sprite[15];
 	public GameObject imagen;
 	public Text preg;
 	public Text[] arrResp = new Text[2];
@@ -68,11 +68,11 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 	}
 
 	void InicioJuego() {
-		bancoPregunta = (int)Random.Range (0.0f, 19.0f);
+		bancoPregunta = (int)Random.Range (0.0f, 14.0f);
 		vidas.GetComponent<SpriteRenderer> ().sprite = arrVidas [contVidas];
 
 		while (BancoPreguntas.tOrfNomenclatura [0, bancoPregunta, 2] == "si") {
-			bancoPregunta = (int)Random.Range (0.0f, 19.0f);
+			bancoPregunta = (int)Random.Range (0.0f, 14.0f);
 		}
 		BancoPreguntas.tOrfNomenclatura [0, bancoPregunta, 2] = "si";
 
