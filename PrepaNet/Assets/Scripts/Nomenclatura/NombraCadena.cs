@@ -127,8 +127,8 @@ public class NombraCadena : MonoBehaviour {
 			resp [i, 1] = "";
 		}
 		if (contVidas < 0) {
-			for (int i = 0; i < 9; i++) {
-				BancoPreguntas.buenasNomeclatura [0, i, 2] = "no";
+			for (int i = 0; i < 19; i++) {
+				BancoPreguntas.cadenaNomenclatura [i, 2] = "no";
 			}
 			panelPerdiste.SetActive (true);
 		} else 

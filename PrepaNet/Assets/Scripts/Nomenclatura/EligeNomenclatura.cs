@@ -59,7 +59,7 @@ public class EligeNomenclatura : MonoBehaviour {
 			if (resp [seleccion, 1] == "si") {
 				contCorrectas++;
 				if (contCorrectas == 20) {
-					MasterNomenclatura.nivelDos = true;
+					//MasterNomenclatura.nivelDos = true;
 					panelGanaste.SetActive (true);
 				}
 			} else {
@@ -83,7 +83,7 @@ public class EligeNomenclatura : MonoBehaviour {
 			resp [i, 1] = "";
 		}
 		if (contVidas < 0) {
-			for (int i = 0; i < 9; i++) {
+			for (int i = 0; i < 49; i++) {
 				BancoPreguntas.buenasNomeclatura [0, i, 2] = "no";
 			}
 			panelPerdiste.SetActive (true);

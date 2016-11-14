@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MasterNomenclatura : MonoBehaviour {
 
-	public static bool nivelDos = false;
-	public static bool nivelTres = false;
+	//public static bool nivelDos = false;
+	///public static bool nivelTres = false;
 
 	public GameObject panelNiv2;
 	public GameObject panelNiv3;
@@ -16,17 +16,17 @@ public class MasterNomenclatura : MonoBehaviour {
 	}
 
 	public void Nivel2() {
-		if (nivelDos)
-			SceneManager.LoadScene ("TrueFalseNomenclatura");
-		else 
-			panelNiv2.SetActive (true);
+		//if (nivelDos)
+		SceneManager.LoadScene ("TrueFalseNomenclatura");
+		//else 
+			//panelNiv2.SetActive (true);
 	}
 
 	public void Nivel3() {
-		if (nivelTres)
-			SceneManager.LoadScene ("");
-		else 
-			panelNiv3.SetActive (true);
+		//if (nivelTres)
+		SceneManager.LoadScene ("CadenaNomenclatura");
+		///else 
+			//panelNiv3.SetActive (true);
 	}
 	
 }

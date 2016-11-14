@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/InicioJuego.unity
+- path: Assets/Scenes/Reacciones/CadenaReacciones.unity
   isLoaded: 1
   isActive: 1

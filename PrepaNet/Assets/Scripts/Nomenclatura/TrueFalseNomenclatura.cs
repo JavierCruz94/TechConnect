@@ -54,7 +54,7 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 				//print ("bien");
 				respCorrectas++;
 				if (respCorrectas == 8) {
-					MasterNomenclatura.nivelTres = true;
+					//MasterNomenclatura.nivelTres = true;
 					panelGanaste.SetActive (true);
 				}
 			} else {
