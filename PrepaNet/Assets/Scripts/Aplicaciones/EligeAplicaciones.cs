@@ -10,6 +10,7 @@ public class EligeAplicaciones : MonoBehaviour {
 	public GameObject vidas;
 	public GameObject panelPerdiste;
 	public GameObject panelGanaste;
+	public GameObject buenas;
 
 	int contVidas;
 	int contCorrectas;
@@ -93,6 +94,7 @@ public class EligeAplicaciones : MonoBehaviour {
 
 	void IniciaJuego(){
 		vidas.GetComponent<SpriteRenderer> ().sprite = spriteVidas [contVidas];
+		buenas.GetComponent<Text> ().text = contCorrectas + " / 20";
 		slotBuena = (int)Random.Range (0.0f, 3.0f);
 		pregunta = (int)Random.Range (0.0f, 28.0f);
 

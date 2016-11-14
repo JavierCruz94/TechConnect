@@ -49,6 +49,8 @@
      <Compile Include="Assets\Scripts\Aplicaciones\EligeAplicaciones.cs" />
      <Compile Include="Assets\Scripts\Aplicaciones\PanelCadenaAplicaciones.cs" />
      <Compile Include="Assets\Scripts\Aplicaciones\PanelEligeAplicaciones.cs" />
+     <Compile Include="Assets\Scripts\Aplicaciones\PanelTFAplicaciones.cs" />
+     <Compile Include="Assets\Scripts\Aplicaciones\TrueFalseAplicaciones.cs" />
      <Compile Include="Assets\Scripts\BancoPreguntas.cs" />
      <Compile Include="Assets\Scripts\BotonPanel.cs" />
      <Compile Include="Assets\Scripts\EligeRespuesta.cs" />

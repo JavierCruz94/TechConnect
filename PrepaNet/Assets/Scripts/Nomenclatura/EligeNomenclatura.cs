@@ -10,6 +10,7 @@ public class EligeNomenclatura : MonoBehaviour {
 	public GameObject vidas;
 	public GameObject panelPerdiste;
 	public GameObject panelGanaste;
+	public GameObject buenas;
 
 	int contVidas;
 	int contCorrectas;
@@ -83,7 +84,7 @@ public class EligeNomenclatura : MonoBehaviour {
 			resp [i, 1] = "";
 		}
 		if (contVidas < 0) {
-			for (int i = 0; i < 49; i++) {
+			for (int i = 0; i < 44; i++) {
 				BancoPreguntas.buenasNomeclatura [0, i, 2] = "no";
 			}
 			panelPerdiste.SetActive (true);
@@ -93,11 +94,12 @@ public class EligeNomenclatura : MonoBehaviour {
 
 	void IniciaJuego(){
 		vidas.GetComponent<SpriteRenderer> ().sprite = spriteVidas [contVidas];
+		buenas.GetComponent<Text> ().text = contCorrectas + " / 20";
 		slotBuena = (int)Random.Range (0.0f, 3.0f);
-		pregunta = (int)Random.Range (0.0f, 49.0f);
+		pregunta = (int)Random.Range (0.0f, 44.0f);
 
 		while (BancoPreguntas.buenasNomeclatura [0, pregunta, 2] == "si") {
-			pregunta = (int)Random.Range (0.0f, 49.0f);
+			pregunta = (int)Random.Range (0.0f, 4.0f);
 		}
 		BancoPreguntas.buenasNomeclatura [0, pregunta, 2] = "si";
 		//Escribir la pregunta en el título

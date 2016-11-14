@@ -13,6 +13,7 @@ public class TrueFalseReacciones : MonoBehaviour {
 	public GameObject panelGanaste;
 	public GameObject vidas;
 	public Sprite[] arrVidas = new Sprite[4];
+	public GameObject buenas;
 
 	public int bancoPregunta = 0;
 	string[,] pregunta = new string[,]{{"",""}};
@@ -53,7 +54,7 @@ public class TrueFalseReacciones : MonoBehaviour {
 			if (BancoPreguntas.tOrfReacciones[0,bancoPregunta, 1] == trad) {
 				//print ("bien");
 				respCorrectas++;
-				if (respCorrectas == 8) {
+				if (respCorrectas == 10) {
 					//MasterNomenclatura.nivelTres = true;
 					panelGanaste.SetActive (true);
 				}
@@ -70,6 +71,7 @@ public class TrueFalseReacciones : MonoBehaviour {
 	void InicioJuego() {
 		bancoPregunta = (int)Random.Range (0.0f, 14.0f);
 		vidas.GetComponent<SpriteRenderer> ().sprite = arrVidas [contVidas];
+		buenas.GetComponent<Text> ().text = respCorrectas + " / 10";
 
 		while (BancoPreguntas.tOrfReacciones [0, bancoPregunta, 2] == "si") {
 			bancoPregunta = (int)Random.Range (0.0f, 14.0f);

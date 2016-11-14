@@ -2,10 +2,10 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class TrueFalseNomenclatura : MonoBehaviour {
-	
-	public Sprite[] arrImagen = new Sprite[15];
-	public GameObject imagen;
+public class TrueFalseAplicaciones : MonoBehaviour {
+
+	//public Sprite[] arrImagen = new Sprite[15];
+	//public GameObject imagen;
 	public Text preg;
 	public Text[] arrResp = new Text[2];
 	public GameObject panel;
@@ -51,7 +51,7 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 			}
 
 			//validar todo
-			if (BancoPreguntas.tOrfNomenclatura[0,bancoPregunta, 1] == trad) {
+			if (BancoPreguntas.tOrfAplicaciones[0,bancoPregunta, 1] == trad) {
 				//print ("bien");
 				respCorrectas++;
 				if (respCorrectas == 10) {
@@ -69,19 +69,19 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 	}
 
 	void InicioJuego() {
-		bancoPregunta = (int)Random.Range (0.0f, 14.0f);
+		bancoPregunta = (int)Random.Range (0.0f, 19.0f);
 		vidas.GetComponent<SpriteRenderer> ().sprite = arrVidas [contVidas];
 		buenas.GetComponent<Text> ().text = respCorrectas + " / 10";
 
-		while (BancoPreguntas.tOrfNomenclatura [0, bancoPregunta, 2] == "si") {
-			bancoPregunta = (int)Random.Range (0.0f, 14.0f);
+		while (BancoPreguntas.tOrfAplicaciones [0, bancoPregunta, 2] == "si") {
+			bancoPregunta = (int)Random.Range (0.0f, 19.0f);
 		}
-		BancoPreguntas.tOrfNomenclatura [0, bancoPregunta, 2] = "si";
+		BancoPreguntas.tOrfAplicaciones [0, bancoPregunta, 2] = "si";
 
-		pregunta [0, 0] = BancoPreguntas.tOrfNomenclatura [0,bancoPregunta, 0];
-		pregunta [0, 1] = BancoPreguntas.tOrfNomenclatura [0,bancoPregunta, 1];
+		pregunta [0, 0] = BancoPreguntas.tOrfAplicaciones [0,bancoPregunta, 0];
+		pregunta [0, 1] = BancoPreguntas.tOrfAplicaciones [0,bancoPregunta, 1];
 		preg.GetComponent<Text> ().text = pregunta [0, 0];
-		imagen.GetComponent<SpriteRenderer> ().sprite = arrImagen [bancoPregunta];
+		//imagen.GetComponent<SpriteRenderer> ().sprite = arrImagen [bancoPregunta];
 	}
 
 	void Reinicia() {
@@ -96,8 +96,8 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 		pregunta [0, 1] = "";
 
 		if (contVidas < 0) {
-			for (int i = 0; i < 14; i++) {
-				BancoPreguntas.tOrfNomenclatura [0, i, 2] = "no";
+			for (int i = 0; i < 19; i++) {
+				BancoPreguntas.tOrfAplicaciones [0, i, 2] = "no";
 			}
 			panelPerdiste.SetActive (true);
 		} else 

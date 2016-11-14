@@ -12,6 +12,7 @@ public class CadenaAplicaciones : MonoBehaviour {
 	public GameObject panel;
 	public GameObject panelGanaste;
 	public GameObject panelPerdiste;
+	public GameObject buenas;
 
 	int contVidas;
 	int contCorrectas;
@@ -37,6 +38,7 @@ public class CadenaAplicaciones : MonoBehaviour {
 
 	void IniciaJuego(){
 		vidas.GetComponent<SpriteRenderer> ().sprite = arrVidas [contVidas];
+		buenas.GetComponent<Text> ().text = contCorrectas + " / 10";
 		slotBuena = (int)Random.Range (0.0f, 3.0f);
 		pregunta = (int)Random.Range (0.0f, 19.0f);
 
@@ -101,13 +103,11 @@ public class CadenaAplicaciones : MonoBehaviour {
 		if (contResp == 1) {
 			if (resp [seleccion, 1] == "si") {
 				contCorrectas++;
-				print ("bien");
 				if (contCorrectas == 10) {
 					//MasterNomenclatura.nivelDos = true;
 					panelGanaste.SetActive (true);
 				}
 			} else {
-				print ("mal");
 				contVidas--;
 			}
 			Reinicia();
