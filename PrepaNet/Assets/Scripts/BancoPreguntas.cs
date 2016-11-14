@@ -357,7 +357,26 @@ public class BancoPreguntas : MonoBehaviour {
 		}};
 
 	public static string[,] relacionaAplicaciones = new string[,] {
-		{ "", "no" },
+		{ "Ácido málico", "no" },
+		{ "Ácido butanóico", "no" },
+		{ "Ácido oleico", "no" },
+		{ "Ácido propanoico", "no" },
+		{ "Ácido fumárico", "no" },
+		{ "Ácido láctico", "no" },
+		{ "Ácido cítrico", "no" },
+		{ "Ácido málico", "no" },
+		{ "Ácido butanóico", "no" },
+		{ "Ácido propanoico", "no" },
+		{ "Ácido fumárico", "no" },
+		{ "Ácido láctico", "no" },
+		{ "Ácido cítrico", "no" },
+		{ "Ácido málico", "no" },
+		{ "Ácido butanóico", "no" },
+		{ "Ácido oleico", "no" },
+		{ "Ácido propanoico", "no" },
+		{ "Ácido fumárico", "no" },
+		{ "Ácido láctico", "no" },
+		{ "Ácido cítrico", "no" },
 	};
 
 	public static string[, ,] tOrfAplicaciones = new string[, ,] {{

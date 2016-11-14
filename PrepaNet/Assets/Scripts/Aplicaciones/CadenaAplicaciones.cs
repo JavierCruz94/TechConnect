@@ -50,20 +50,32 @@ public class CadenaAplicaciones : MonoBehaviour {
 		resp [slotBuena, 0] = BancoPreguntas.relacionaAplicaciones [pregunta, 0];
 		resp [slotBuena, 1] = "si";
 		imagen.GetComponent<SpriteRenderer> ().sprite = arrImagen [pregunta];
+		int numMin = 0;
+		int numMax = 0;
 
-		int mala1 = (int)Random.Range (0.0f, 19.0f);
+		if (pregunta < 7) {
+			numMin = 0;
+			numMax = 6;
+		} else if (pregunta > 6 && pregunta < 13) {
+			numMin = 7;
+			numMax = 12;
+		} else {
+			numMin = 13;
+			numMax = 19;
+		}
+		int mala1 = (int)Random.Range ((float)numMin, (float)numMax);
 		while (mala1 == pregunta) {
-			mala1 = (int)Random.Range (0.0f, 19.0f);
+			mala1 = (int)Random.Range ((float)numMin, (float)numMax);
 		}
 
-		int mala2 = (int)Random.Range (0.0f, 19.0f);
+		int mala2 = (int)Random.Range ((float)numMin, (float)numMax);
 		while (mala2 == pregunta || mala2 == mala1) {
-			mala2 = (int)Random.Range (0.0f, 19.0f);
+			mala2 = (int)Random.Range ((float)numMin, (float)numMax);
 		}
 
-		int mala3 = (int)Random.Range (0.0f, 19.0f);
+		int mala3 = (int)Random.Range ((float)numMin, (float)numMax);
 		while (mala3 == pregunta || mala3 == mala2 || mala3 == mala1) {
-			mala3 = (int)Random.Range (0.0f, 19.0f);
+			mala3 = (int)Random.Range ((float)numMin, (float)numMax);
 		}
 
 		//Asignar las respuestas erroneas en los espacios desocupados
@@ -128,9 +140,9 @@ public class CadenaAplicaciones : MonoBehaviour {
 		}
 		if (contVidas < 0) {
 			for (int i = 0; i < 19; i++) {
-				BancoPreguntas.relacionaAplicaciones [i, 2] = "no";
+				BancoPreguntas.relacionaAplicaciones [i, 1] = "no";
 			}
-			panelPerdiste.SetActive (true);
+ 				panelPerdiste.SetActive (true);
 		} else 
 			IniciaJuego ();
 	}

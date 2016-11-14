@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Nomenclatura\TrueFalseNomenclatura.cs" />
      <Compile Include="Assets\Scripts\PanelPreguntas1.cs" />
      <Compile Include="Assets\Scripts\PanelTF.cs" />
+     <Compile Include="Assets\Scripts\Play.cs" />
      <Compile Include="Assets\Scripts\Reacciones\CadenaReacciones.cs" />
      <Compile Include="Assets\Scripts\Reacciones\EligeReacciones.cs" />
      <Compile Include="Assets\Scripts\Reacciones\PanelCadenaReacciones.cs" />

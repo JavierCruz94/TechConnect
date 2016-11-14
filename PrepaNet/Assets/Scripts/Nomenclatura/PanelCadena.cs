@@ -8,6 +8,6 @@ public class PanelCadena : MonoBehaviour {
 
 	public void QuitarPanel() {
 		panel.SetActive (false);
-		respuestas.GetComponent<NombraCadena> ().contResp = 0;
+		respuestas.GetComponent<CadenaAplicaciones> ().contResp = 0;
 	}
 }
