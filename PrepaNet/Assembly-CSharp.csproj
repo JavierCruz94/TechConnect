@@ -45,6 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Aplicaciones\CadenaAplicaciones.cs" />
+     <Compile Include="Assets\Scripts\Aplicaciones\EligeAplicaciones.cs" />
+     <Compile Include="Assets\Scripts\Aplicaciones\PanelCadenaAplicaciones.cs" />
+     <Compile Include="Assets\Scripts\Aplicaciones\PanelEligeAplicaciones.cs" />
      <Compile Include="Assets\Scripts\BancoPreguntas.cs" />
      <Compile Include="Assets\Scripts\BotonPanel.cs" />
      <Compile Include="Assets\Scripts\EligeRespuesta.cs" />
@@ -62,6 +66,8 @@
      <Compile Include="Assets\Scripts\Reacciones\EligeReacciones.cs" />
      <Compile Include="Assets\Scripts\Reacciones\PanelCadenaReacciones.cs" />
      <Compile Include="Assets\Scripts\Reacciones\PanelReacciones.cs" />
+     <Compile Include="Assets\Scripts\Reacciones\PanelTFReacciones.cs" />
+     <Compile Include="Assets\Scripts\Reacciones\TrueFalseReacciones.cs" />
      <Compile Include="Assets\Scripts\RelacionaColumnas.cs" />
      <Compile Include="Assets\Scripts\SeleccionaRespuesta.cs" />
      <Compile Include="Assets\Scripts\TrueFalseF.cs" />

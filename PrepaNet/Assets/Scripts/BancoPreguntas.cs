@@ -77,7 +77,7 @@ public class BancoPreguntas : MonoBehaviour {
 			{"¿Qué prefijo multiplicativo se usa cuando hay 3 sustituyentes iguales en una estructura?", "tri", "no"},
 			{"¿Qué prefijo multiplicativo se usa cuando hay 4 sustituyentes iguales en una estructura?", "tetra", "no"},
 			{"¿Qué prefijo multiplicativo se usa cuando hay 5 sustituyentes iguales en una estructura?", "penta", "no"},
-			{"¿Qué prefijo multiplicativo se usa cuando hay 2 sustituyentes iguales en una estructura?", "hexa", "no"},
+			{"¿Qué prefijo multiplicativo se usa cuando hay 6 sustituyentes iguales en una estructura?", "hexa", "no"},
 			{"Cuando hay más de un sustituyente igual en la estructura a nombrar se utiliza el __________ para indicar la cantidad de veces que se repite en ella.", "prefijo multiplicativo", "no"},
 			{"Después de escribir el prefijo multiplicativo correspondiente se debe colocar el número de carbono donde se localiza cada sustituyente repetido, los índices de cada sustituyente deben estar separados con __________.", "coma", "no"},
 			{"¿Cómo se debe escribir el prefijo y el nombre del sustituyente que modifica al nombrar una estructura?", "juntos", "no"},
@@ -192,7 +192,7 @@ public class BancoPreguntas : MonoBehaviour {
 
 	//----------------------REACCIONES DE ACIDOS C--------------
 	public static string[, ,] eligeBienReacciones = new string[, ,] { {
-			{ "¿Cual es la formula molecular del acido acético?", "CH3COOH", "no" },
+			{ "¿Cual es la fórmula molecular del acido acético?", "CH3COOH", "no" },
 			{ "Los aldehídos o los alcoholes primarios se oxidan normalmente para producer acidos emapleando __________:", "Acido Cromico", "no" },
 			{ "El permanganato de potasio reacciona con los alquenos para dar __________:", "Glicoles", "no" },
 			{ "¿Cómo se diferencian las reacciones de lo ácidos carboxílicos a la de las cetonas o aldehídos?", "Reaccionan principalmente por sustitución nucleofílica de acilo", "no" },

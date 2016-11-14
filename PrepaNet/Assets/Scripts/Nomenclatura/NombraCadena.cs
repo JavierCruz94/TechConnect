@@ -102,7 +102,7 @@ public class NombraCadena : MonoBehaviour {
 			if (resp [seleccion, 1] == "si") {
 				contCorrectas++;
 				print ("bien");
-				if (contCorrectas == 3) {
+				if (contCorrectas == 10) {
 					//MasterNomenclatura.nivelDos = true;
 					panelGanaste.SetActive (true);
 				}

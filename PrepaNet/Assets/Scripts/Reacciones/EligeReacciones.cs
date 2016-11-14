@@ -83,7 +83,7 @@ public class EligeReacciones : MonoBehaviour {
 			resp [i, 1] = "";
 		}
 		if (contVidas < 0) {
-			for (int i = 0; i < 9; i++) {
+			for (int i = 0; i < 28; i++) {
 				BancoPreguntas.eligeBienReacciones [0, i, 2] = "no";
 			}
 			panelPerdiste.SetActive (true);
@@ -106,9 +106,9 @@ public class EligeReacciones : MonoBehaviour {
 		resp [slotBuena, 1] = "si";
 
 		//Asignar las respuestas erroneas en los espacios desocupados
-		AsignarPreguntas(resp, BancoPreguntas.malasNomenclatura[0,pregunta,0]);
-		AsignarPreguntas(resp, BancoPreguntas.malasNomenclatura[0,pregunta,1]);
-		AsignarPreguntas(resp, BancoPreguntas.malasNomenclatura[0,pregunta,2]);
+		AsignarPreguntas(resp, BancoPreguntas.eligeMalReacciones[0,pregunta,0]);
+		AsignarPreguntas(resp, BancoPreguntas.eligeMalReacciones[0,pregunta,1]);
+		AsignarPreguntas(resp, BancoPreguntas.eligeMalReacciones[0,pregunta,2]);
 
 		//Cambiar el texto de las preguntas
 		for (int i = 1; i < arrResp.Length; i++) {

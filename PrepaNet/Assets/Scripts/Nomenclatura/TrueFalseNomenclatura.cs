@@ -94,7 +94,7 @@ public class TrueFalseNomenclatura : MonoBehaviour {
 		pregunta [0, 1] = "";
 
 		if (contVidas < 0) {
-			for (int i = 0; i < 2; i++) {
+			for (int i = 0; i < 14; i++) {
 				BancoPreguntas.tOrfNomenclatura [0, i, 2] = "no";
 			}
 			panelPerdiste.SetActive (true);

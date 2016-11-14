@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Reacciones/CadenaReacciones.unity
+- path: Assets/Scenes/Reacciones/TrueFalseReacciones.unity
   isLoaded: 1
   isActive: 1
